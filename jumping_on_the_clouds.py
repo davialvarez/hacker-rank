@@ -12,6 +12,7 @@ def jumpingOnClouds(c):
     return 1
 
 if __name__ == '__main__':
+    if x == N-1: return 0
     n = int(input())
     c = list(map(int, input().rstrip().split()))
     result = jumpingOnClouds(c)
