@@ -8,6 +8,9 @@ import sys
 
 # Complete the jumpingOnClouds function below.
 def jumpingOnClouds(c):
+    i = 0
+    count = 0
+
     print(c)
     return 1
 
