@@ -32,19 +32,15 @@ def cutBamboo(lengths):
     return result
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    lengths_count = int(input().strip())
+    lengths_count = int(input())
 
     lengths = []
 
     for _ in range(lengths_count):
-        lengths_item = int(input().strip())
+        lengths_item = int(input())
         lengths.append(lengths_item)
     
     result = cutBamboo(lengths)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
-
-    fptr.close()
+    print(result)
