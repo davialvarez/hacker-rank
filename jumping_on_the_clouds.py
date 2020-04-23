@@ -8,24 +8,15 @@ import sys
 
 # Complete the jumpingOnClouds function below.
 def jumpingOnClouds(c):
-    print(c)
     count = 0
-    i = 0
-    while i <= len(c):
-        if (c[i] == 0 and c[i+1] == 0):
-            i += 2
+    lenght = len(c)
+    for i in range(lenght-1):
+        if c[i+1] == 0:
             count += 1 
-            print("Primer caso => Value is: ", c[i], "index is: ", i)
-        elif c[i] == 0:
-            i += 1
-            count += 1
-            print("Segundo caso => Value is: ", c[i], "index is: ", i)
-        elif (c[i] == 0 and c[i+1] == 1):
-            i += 2
-            count += 1
-            print("Tercer caso => Value is: ", c[i], "index is: ", i)
-    print("End for")
-    return 1
+            print("Find a 0 => Value is: ", c[i], "index is: ", i)
+        else:
+            print("Find a 1")
+    return print("Count is: ", count)
 
 if __name__ == '__main__':
     n = int(input())
